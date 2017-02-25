@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:layout_gravity="center"
+        android:paddingLeft="15dp"
+        android:background="#ffffff">
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClickPreView"
+            android:layout_alignBottom="@+id/textView10"
+            android:layout_alignTop="@+id/textView10"
+            android:background="@drawable/back_icon"
+            android:id="@+id/button" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="카드 관리"
+            android:textSize="32dp"
+            android:id="@+id/textView10"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"></LinearLayout>
+
+    <ListView
+        android:id="@+id/paymentOptionListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ffffff">
+
+    </ListView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#000000"></LinearLayout>
+
+    <Button
+        android:id="@+id/AddPaymentButton"
+        android:layout_width="221dp"
+        android:layout_height="59dp"
+        android:onClick="onAddPaymentButtonClicked"
+        android:text="카드 추가하기"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center_horizontal"
+
+        android:drawableLeft="@drawable/credit_card"
+        android:background="#ffffff" />
+</LinearLayout>

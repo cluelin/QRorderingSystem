@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cluelin.qrorderingsystem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.camera2" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="23" />
+
+    />
+
+    />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login.LogInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".PaymentOption.ManagePaymentOptionActivity" />
+        <activity android:name=".Menu.StoreMenuList.MenuActivity" />
+        <activity android:name=".PaymentOption.PaymentOptionListActivity" />
+        <activity android:name=".Login.SignUpActivity" />
+        <activity android:name=".QRScanner.QRCameraActivity" />
+        <activity
+            android:name=".QRScanner.QRScanner"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".Order.OrderList.OrderListActivity" />
+        <activity android:name=".Order.OrderDetail.OrderDetailActivity" />
+        <activity android:name=".Menu.MenuConfirm.MenuConfirmActivity">
+            android:windowSoftInputMode="adjustPan"
+        </activity>
+
+    </application>
+
+</manifest>

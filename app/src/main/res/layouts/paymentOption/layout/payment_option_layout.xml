@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+
+    <ListView
+        android:id="@+id/paymentOptionListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ffffff">
+
+    </ListView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#000000"></LinearLayout>
+
+    <Button
+        android:id="@+id/AddPaymentButton"
+        android:layout_width="221dp"
+        android:layout_height="59dp"
+        android:onClick="onAddPaymentButtonClicked"
+        android:text="카드 추가하기"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center_horizontal"
+
+        android:drawableLeft="@drawable/credit_card"
+        android:background="#ffffff" />
+</LinearLayout>
